@@ -1,8 +1,8 @@
 namespace _30_01_2026_Calculadora
 {
-    public partial class Form1 : Form
+    public partial class frmCalculadora : Form
     {
-        public Form1()
+        public frmCalculadora()
         {
             InitializeComponent();
         }
@@ -19,12 +19,29 @@ namespace _30_01_2026_Calculadora
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a, b = 0;
-            a = int.Parse(textBox1.Text);
-            b = int.Parse(textBox2.Text);
             try
             {
-                int resultado = a + b;
+                int a = 0, b = 0, resultado = 0;
+                a = Convert.ToInt32(txtVariableA.Text);
+                b = int.Parse(txtVariableB.Text);
+
+                if(rdbSuma.Checked)
+                {
+                    resultado = a + b;
+                }
+                if(rdbResta.Checked)
+                {
+                    resultado = a - b;
+                }
+                if(rdbMultiplicacion.Checked)
+                {
+                    resultado = a * b;
+                }
+                if(rdbDivision.Checked)
+                {
+                    resultado = a / b;
+                }
+
                 MessageBox.Show("El resultado es: " + resultado.ToString(), "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -39,8 +56,8 @@ namespace _30_01_2026_Calculadora
         }
         private void Reset()
         {
-            textBox1.Clear();
-            textBox2.Text = "";
+            txtVariableA.Clear();
+            txtVariableB.Text = "";
         }
     }
 }
