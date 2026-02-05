@@ -35,6 +35,7 @@
             calculadoraSimpleToolStripMenuItem = new ToolStripMenuItem();
             ordenamientoToolStripMenuItem = new ToolStripMenuItem();
             burbujaToolStripMenuItem = new ToolStripMenuItem();
+            registrosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             // 
             // opcionesToolStripMenuItem
             // 
-            opcionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenamientoToolStripMenuItem });
+            opcionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenamientoToolStripMenuItem, registrosToolStripMenuItem });
             opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             opcionesToolStripMenuItem.Size = new Size(107, 24);
             opcionesToolStripMenuItem.Text = "Aplicaciones";
@@ -74,7 +75,7 @@
             // calculadoraSimpleToolStripMenuItem
             // 
             calculadoraSimpleToolStripMenuItem.Name = "calculadoraSimpleToolStripMenuItem";
-            calculadoraSimpleToolStripMenuItem.Size = new Size(221, 26);
+            calculadoraSimpleToolStripMenuItem.Size = new Size(224, 26);
             calculadoraSimpleToolStripMenuItem.Text = "Calculadora Simple";
             calculadoraSimpleToolStripMenuItem.Click += calculadoraSimpleToolStripMenuItem_Click;
             // 
@@ -82,7 +83,7 @@
             // 
             ordenamientoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { burbujaToolStripMenuItem });
             ordenamientoToolStripMenuItem.Name = "ordenamientoToolStripMenuItem";
-            ordenamientoToolStripMenuItem.Size = new Size(221, 26);
+            ordenamientoToolStripMenuItem.Size = new Size(224, 26);
             ordenamientoToolStripMenuItem.Text = "Ordenamiento";
             // 
             // burbujaToolStripMenuItem
@@ -91,6 +92,13 @@
             burbujaToolStripMenuItem.Size = new Size(143, 26);
             burbujaToolStripMenuItem.Text = "Burbuja";
             burbujaToolStripMenuItem.Click += burbujaToolStripMenuItem_Click_1;
+            // 
+            // registrosToolStripMenuItem
+            // 
+            registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
+            registrosToolStripMenuItem.Size = new Size(224, 26);
+            registrosToolStripMenuItem.Text = "Registros";
+            registrosToolStripMenuItem.Click += registrosToolStripMenuItem_Click;
             // 
             // frmMenu
             // 
@@ -117,5 +125,6 @@
         private ToolStripMenuItem calculadoraSimpleToolStripMenuItem;
         private ToolStripMenuItem ordenamientoToolStripMenuItem;
         private ToolStripMenuItem burbujaToolStripMenuItem;
+        private ToolStripMenuItem registrosToolStripMenuItem;
     }
 }

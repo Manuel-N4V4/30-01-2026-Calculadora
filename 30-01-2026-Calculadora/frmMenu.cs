@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _30_01_2026_Calculadora.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,6 +52,12 @@ namespace _30_01_2026_Calculadora
         private void salidaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void registrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegistro registro = new frmRegistro();
+            registro.Show();
         }
     }
 }
