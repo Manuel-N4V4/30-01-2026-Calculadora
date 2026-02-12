@@ -132,8 +132,9 @@
             rdbSuma.TabStop = true;
             rdbSuma.Text = "Suma";
             rdbSuma.UseVisualStyleBackColor = true;
+            rdbSuma.CheckedChanged += rdbSuma_CheckedChanged;
             // 
-            // Form1
+            // frmCalculadora
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -143,7 +144,7 @@
             Controls.Add(btnCalcular);
             Controls.Add(txtVariableB);
             Controls.Add(txtVariableA);
-            Name = "Form1";
+            Name = "frmCalculadora";
             Text = "Form1";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

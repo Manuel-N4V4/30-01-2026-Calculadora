@@ -21,23 +21,41 @@ namespace _30_01_2026_Calculadora.Formularios
         {
             persona.Add(new Persona()
             {
-                Nombre = txtApellido.Text = txtApellido.Text,
+                Nombre = txtNombre.Text,
+                Apellido = txtApellido.Text,
                 Fecha = dtpFecha.Value
             });
         }
-
         private void tabControl1_TabIndexChanged(object sender, EventArgs e)
         {
-
         }
-
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(tabControl1.SelectedIndex == 1)
+            if (tabControl1.SelectedIndex == 1)
             {
                 dgvPersonas.DataSource = null;
                 dgvPersonas.DataSource = persona;
             }
         }
-    }
+        private void verificarRegistros()
+        {
+            if (persona.Count == 0)
+            {
+                btnEliminar.Enabled = false;
+            }
+            else
+            {
+                btnEliminar.Enabled = true;
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            persona.RemoveAt(dgvPersonas.CurrentRow.Index);
+            dgvPersonas.DataSource = null; // Limpiar el DataGridView
+            dgvPersonas.DataSource = persona; // Colocamos los valores en DGV
+            verificarRegistros(); // Verificar si habilito boton
+        }
+
+     }
 }

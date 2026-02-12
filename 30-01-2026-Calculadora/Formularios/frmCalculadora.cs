@@ -25,19 +25,19 @@ namespace _30_01_2026_Calculadora
                 a = Convert.ToInt32(txtVariableA.Text);
                 b = int.Parse(txtVariableB.Text);
 
-                if(rdbSuma.Checked)
+                if (rdbSuma.Checked)
                 {
                     resultado = a + b;
                 }
-                if(rdbResta.Checked)
+                if (rdbResta.Checked)
                 {
                     resultado = a - b;
                 }
-                if(rdbMultiplicacion.Checked)
+                if (rdbMultiplicacion.Checked)
                 {
                     resultado = a * b;
                 }
-                if(rdbDivision.Checked)
+                if (rdbDivision.Checked)
                 {
                     resultado = a / b;
                 }
@@ -58,6 +58,11 @@ namespace _30_01_2026_Calculadora
         {
             txtVariableA.Clear();
             txtVariableB.Text = "";
+        }
+
+        private void rdbSuma_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
