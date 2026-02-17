@@ -15,6 +15,9 @@ namespace _30_01_2026_Calculadora
         frmTemporizadores reloj = new frmTemporizadores();
         frmBurbuja burbuja = new frmBurbuja();
         frmCalculadora calculadora = new frmCalculadora();
+        frmContador contador = new frmContador();
+        frmXMLAccess xmlForm = new frmXMLAccess();
+        frmEditor editor = new frmEditor();
 
         public frmMenu()
         {
@@ -65,8 +68,17 @@ namespace _30_01_2026_Calculadora
 
         private void editorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmEditor editor = new frmEditor();
             editor.Show();
+        }
+
+        private void contadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            contador.Show();
+        }
+
+        private void xmlDirectorioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            xmlForm.Show();
         }
     }
 }

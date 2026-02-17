@@ -163,6 +163,7 @@
             dgvPersonas.RowHeadersWidth = 51;
             dgvPersonas.Size = new Size(457, 417);
             dgvPersonas.TabIndex = 0;
+            dgvPersonas.CellContentClick += dgvPersonas_CellContentClick;
             // 
             // btnEliminar
             // 

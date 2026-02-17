@@ -31,7 +31,6 @@ namespace _30_01_2026_Calculadora
             {
                 sp.Play();
             }
-
         }
 
         private void lblHora_Click(object sender, EventArgs e)

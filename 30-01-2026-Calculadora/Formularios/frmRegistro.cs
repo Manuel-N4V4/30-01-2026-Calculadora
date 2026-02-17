@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace _30_01_2026_Calculadora.Formularios
 {
     public partial class frmRegistro : Form
@@ -16,7 +17,6 @@ namespace _30_01_2026_Calculadora.Formularios
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             persona.Add(new Persona()
@@ -57,5 +57,9 @@ namespace _30_01_2026_Calculadora.Formularios
             verificarRegistros(); // Verificar si habilito boton
         }
 
-     }
+        private void dgvPersonas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
 }

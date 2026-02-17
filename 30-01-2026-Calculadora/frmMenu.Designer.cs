@@ -38,6 +38,8 @@
             registrosToolStripMenuItem = new ToolStripMenuItem();
             temporizadoresToolStripMenuItem = new ToolStripMenuItem();
             editorToolStripMenuItem = new ToolStripMenuItem();
+            contadorToolStripMenuItem = new ToolStripMenuItem();
+            xmlDirectorioToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +49,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, opcionesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(228, 28);
+            menuStrip1.Size = new Size(389, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             menuStrip1.ItemClicked += menuStrip1_ItemClicked;
@@ -62,13 +64,13 @@
             // salidaToolStripMenuItem
             // 
             salidaToolStripMenuItem.Name = "salidaToolStripMenuItem";
-            salidaToolStripMenuItem.Size = new Size(133, 26);
+            salidaToolStripMenuItem.Size = new Size(224, 26);
             salidaToolStripMenuItem.Text = "Salida";
             salidaToolStripMenuItem.Click += salidaToolStripMenuItem_Click;
             // 
             // opcionesToolStripMenuItem
             // 
-            opcionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenamientoToolStripMenuItem, registrosToolStripMenuItem, temporizadoresToolStripMenuItem, editorToolStripMenuItem });
+            opcionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { calculadoraSimpleToolStripMenuItem, ordenamientoToolStripMenuItem, registrosToolStripMenuItem, temporizadoresToolStripMenuItem, editorToolStripMenuItem, contadorToolStripMenuItem, xmlDirectorioToolStripMenuItem });
             opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             opcionesToolStripMenuItem.Size = new Size(107, 24);
             opcionesToolStripMenuItem.Text = "Aplicaciones";
@@ -91,7 +93,7 @@
             // burbujaToolStripMenuItem
             // 
             burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
-            burbujaToolStripMenuItem.Size = new Size(143, 26);
+            burbujaToolStripMenuItem.Size = new Size(224, 26);
             burbujaToolStripMenuItem.Text = "Burbuja";
             burbujaToolStripMenuItem.Click += burbujaToolStripMenuItem_Click_1;
             // 
@@ -116,11 +118,25 @@
             editorToolStripMenuItem.Text = "Editor";
             editorToolStripMenuItem.Click += editorToolStripMenuItem_Click;
             // 
+            // contadorToolStripMenuItem
+            // 
+            contadorToolStripMenuItem.Name = "contadorToolStripMenuItem";
+            contadorToolStripMenuItem.Size = new Size(224, 26);
+            contadorToolStripMenuItem.Text = "Contador";
+            contadorToolStripMenuItem.Click += contadorToolStripMenuItem_Click;
+            // 
+            // xmlDirectorioToolStripMenuItem
+            // 
+            xmlDirectorioToolStripMenuItem.Name = "xmlDirectorioToolStripMenuItem";
+            xmlDirectorioToolStripMenuItem.Size = new Size(224, 26);
+            xmlDirectorioToolStripMenuItem.Text = "xmlDirectorio";
+            xmlDirectorioToolStripMenuItem.Click += xmlDirectorioToolStripMenuItem_Click;
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(228, 166);
+            ClientSize = new Size(389, 177);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "frmMenu";
@@ -144,5 +160,7 @@
         private ToolStripMenuItem registrosToolStripMenuItem;
         private ToolStripMenuItem temporizadoresToolStripMenuItem;
         private ToolStripMenuItem editorToolStripMenuItem;
+        private ToolStripMenuItem contadorToolStripMenuItem;
+        private ToolStripMenuItem xmlDirectorioToolStripMenuItem;
     }
 }
